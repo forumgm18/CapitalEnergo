@@ -1,0 +1,47 @@
+.main-special-offer {
+  background: url(../img/bg-spec.jpg) no-repeat center;
+  background-size: cover;
+  @include dFlex($fw:wrap);
+  padding: 73px 117px 112px 0;
+
+      @include media-max-width('lg') {
+        margin-left: -15px;
+        margin-right: -15px;
+        //padding-left: 15px;
+        //padding-right: 15px;
+        padding: 31px 15px 25px;
+      }
+
+      .title-line {color: #fff;}
+}
+.special-offer {
+  max-width: 763px;
+  margin-left: auto;
+  align-self: flex-end;
+
+    &-text{
+      @include setFontBase(32px,#fff, 500, $lh : 44px, $ls : 0.05em);
+      margin-bottom: 17px;
+      margin-top: 54px;
+      
+        @include media-max-width('lg') {
+          font-size: 22px;
+          line-height: 1.2;
+        }
+
+    }
+    &-links{
+      @include dFlex($ai:center,$fw:wrap);
+
+        .btn-transparent{
+          margin-right: 25px;
+          margin-bottom: 15px;
+          min-width: 174px;
+        }
+    }
+    &-date{
+      @include setFontBase(14px,#fff, $lh : 24px, $ls : 0.05em);
+      margin-bottom: 15px;
+
+    }
+}

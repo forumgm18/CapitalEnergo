@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+ @@include('./include/head.html',{"title":"КЭПИТАЛ-ЭНЕРГО - Направления"})
+<body >
+  <div class="blur">
+    <div class="container" >
+      <div class="content top-direction-bgr" >
+        @@include('./include/header.html')
+        <div class="direction-block">
+          @@include('./include/page-blocks/top-title.html',{  "title" : "Наши направления"})
+          <div class="direction-content">
+              @@include('./include/page-blocks/dir-item.html',{
+              "title" : "Электроэнергетика",
+              "img" : "/img/servises/s1.jpg",
+              "iconId" : "#icon-lightning-round"
+              })
+              @@include('./include/page-blocks/dir-item.html',{
+              "title" : "Проектирование",
+              "img" : "/img/servises/s2.jpg",
+              "iconId" : "#icon-education"
+              })
+              @@include('./include/page-blocks/dir-item.html',{
+              "title" : "Строительство и ремонтные работы",
+              "img" : "/img/servises/s3.jpg",
+              "iconId" : "#icon-labor"
+              })
+              @@include('./include/page-blocks/dir-item.html',{
+              "title" : "Инженерные сети",
+              "img" : "/img/servises/s4.jpg",
+              "iconId" : "#icon-electronic"
+              })
+              @@include('./include/page-blocks/dir-item.html',{
+              "title" : "Электролаборатория и энергоаудит",
+              "img" : "/img/servises/s5.jpg",
+              "iconId" : "#icon-ups"
+              })
+              @@include('./include/page-blocks/dir-item.html',{
+              "title" : "Техническая эксплуатация инженерных сетей Объектов",
+              "img" : "/img/servises/s6.jpg",
+              "iconId" : "#icon-repairing-service"
+              })
+              @@include('./include/page-blocks/dir-item.html',{
+              "title" : "Подбор Технологического инженерного оборудования. Поставка электротехники",
+              "img" : "/img/servises/s7.jpg",
+              "iconId" : "#icon-milling-machine"
+              })
+              @@include('./include/page-blocks/dir-item.html',{
+              "title" : "Консультационные услуги, согласования и разрешения, технико-экономическая оценка проектов",
+              "img" : "/img/servises/s8.jpg",
+              "iconId" : "#icon-consult"
+              })
+
+
+          </div>
+        </div>
+
+        @@ include('./include/footer.html')
+      </div>
+    </div>
+
+  </div>
+  @@include('./include/modal.html')
+  @@include('./include/scripts.html')
+</body>
+</html>

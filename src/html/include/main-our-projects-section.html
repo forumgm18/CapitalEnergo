@@ -1,0 +1,38 @@
+<section class="main-our-projects">
+
+  @@include('./include/page-blocks/title-block.html',{  "title" : "@@title" , "link_text" : "все проекты" })
+
+  <div class="our-projects">
+
+    @@include('./include/page-blocks/our-project-item.html',{
+    "title" : "ОПТОВАЯ СЕТЬ СТРОИТЕЛЬНЫХ МАТЕРИАЛОВ «ПЕТРОВИЧ»",
+    "img" : "/img/our-projects/op1.jpg",
+    "location" : "Москва и МО",
+    "text" : "<p>Поставка светотехнического оборудования. Консультационные услуги в части оптимизации проектных решений ...</p>"
+    })
+
+    @@include('./include/page-blocks/our-project-item.html',{
+    "title" : "ТВК «АВИАПАРК»",
+    "img" : "/img/our-projects/op2.jpg",
+    "location" : "Москва",
+    "text" : "<p>Строительство Подиума ледовой арены для ведения островной розничной торговли.</p><p> Генеральный подряд.</p>"
+    })
+
+    @@include('./include/page-blocks/our-project-item.html',{
+    "title" : "БЦ «КОМСИТИ»",
+    "img" : "/img/our-projects/op3.jpg",
+    "location" : "Москва",
+    "text" : "<p>Проведение испытаний электросети ЭИЛ  с подготовкой Технического отчета.</p>"
+    })
+
+  </div>
+
+  <div class="all">
+    <a href="#" class="title-link">
+      <span>все проекты</span>
+      <svg class="icon"><use xlink:href="#icon-arrow-right-2"></use></svg>
+    </a>
+  </div>
+
+
+</section>

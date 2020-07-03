@@ -1,0 +1,128 @@
+.btn-line{
+  display: block;
+  width: 40px;
+  height: 5px;
+  background: var(--base-color2);
+  transition: all .3s;
+
+
+  @include media-max-width('md') {    width: 28px;  height: 3px; }
+
+  &:nth-child(2) {
+    width: 25px;
+    margin: 8px 0;
+
+    @include media-max-width('md') {    width: 16px;  margin: 5px 0;}
+
+  }
+}
+
+.open .btn-line{
+    width: 20px;
+
+    @include media-max-width('md') {    width: 11px; }
+
+
+  &:nth-child(1) {  transform: rotate(-45deg);  }
+  &:nth-child(2) {
+    width: 33px;
+    margin: 0;
+    margin-left: 7px;
+
+    @include media-max-width('md') {    width: 25px;  margin-left: 3px;}
+
+  }
+  &:nth-child(3) {  transform: rotate(45deg);  }
+}
+
+
+
+.btn {
+  @include setFontBase(16px,#fff,500, $ls : 0.1em);
+
+    @include dFlex(center,center);
+    text-align: center;
+
+    background: var(--base-color1);
+    border: 1px solid var(--base-color1);
+
+    cursor: pointer;
+    min-height: 48px;
+    transition: all .3s;
+
+    position: relative;
+    height: 50px;
+    min-width: 174px;
+  padding: 0 15px;
+       @include media-max-width('md') { font-size: 14px;}
+
+  &:hover, &:focus {
+      background: var(--hover-base-color1);
+    }
+
+    .icon {
+      position: absolute;
+      
+        &-corner-left{
+          left: var(--btn-corner-margin);
+          top: var(--btn-corner-margin);
+        }
+        &-corner-right{
+          right: var(--btn-corner-margin);
+          bottom: var(--btn-corner-margin);
+          --base-color2: var(--base-color1);
+        }
+    }
+
+
+    &-transparent {
+      @include dFlex(center,center);
+      text-align: center;
+
+      background-color: transparent;
+      color: var(--base-color1);
+      border: 1px solid var(--base-color1);
+
+      cursor: pointer;
+      min-height: 48px;
+      transition: all .3s;
+
+      position: relative;
+      padding: 0 15px;
+
+       @include media-max-width('md') { font-size: 14px;}
+
+      &:hover, &:focus {
+        background: var(--base-color1);
+        color: #fff;
+
+        .icon {
+          //position: absolute;
+
+          &-corner-left{
+            left: var(--btn-corner-margin);
+            top: var(--btn-corner-margin);
+          }
+          &-corner-right{
+            right: var(--btn-corner-margin);
+            bottom: var(--btn-corner-margin);
+          }
+        }
+
+      }
+      .icon {
+        position: absolute;
+
+        &-corner-left{
+          left: -1px;
+          top: -1px;
+        }
+        &-corner-right{
+          right: -1px;
+          bottom: -1px;
+          --base-color2: var(--base-color1);
+        }
+      }
+
+    }
+}

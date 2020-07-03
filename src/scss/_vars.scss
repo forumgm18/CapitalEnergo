@@ -1,0 +1,63 @@
+
+$grid-breakpoints: (
+        xs: 0,
+       xxs: 400px,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1500px
+
+) !default;
+
+$mainFontSize: 16px;
+$fBase: Avenir, -apple-system, BlinkMacSystemFont, sans-serif;
+
+$baseColor1: #6bc02f;
+$baseColor2: #1F306A; //31-48-106
+$baseColor3: #E2E2E2;
+$baseColor4: #c4c4c4;
+$errorColor: #DE6B00;
+$footerBgr: #0A1129;
+$servisesBgr: #AEAEAE;
+
+
+$hoverBaseColor1: #4B8820;
+//$hoverBaseColor2: #1F306A;
+//$hoverBaseColor3: #E2E2E2;
+
+$topLines: #B0B0B0;
+$grayText: #B0B0B0;
+$menuBgr: #F8F8F8;
+$textColor: #000;
+$menuContacts: #424242;
+$titleBaseColor: #424242;
+$mainOurProjectTextColor: #424242;
+$knowDateColor: #c4c4c4;
+$btnCornerMargin: -4px;
+
+
+
+
+
+
+:root {
+  --base-color1: #{$baseColor1};
+  --base-color2: #{$baseColor2};
+  --base-color3: #{$baseColor3};
+  --base-color4: #{$baseColor4};
+  --error-color3: #{$errorColor};
+  --footer-bgr: #{$footerBgr};
+  --gray-text: #{$grayText};
+  --text-color: #{$textColor};
+  --menu-bgr: #{$menuBgr};
+  --menu-contacts: #{$menuContacts};
+  --btn-corner-margin: #{$btnCornerMargin};
+  --top-lines: #{$topLines};
+  --servises-bgr: #{$servisesBgr};
+  --title-base-color: #{$titleBaseColor};
+  --main-our-project-text-color: #{$mainOurProjectTextColor};
+  --know-date-color: #{$knowDateColor};
+
+  --hover-base-color1: #{$hoverBaseColor1};
+}

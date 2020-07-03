@@ -1,0 +1,64 @@
+.fancybox-active .blur {
+  filter: blur(20px);
+  background: rgba(255, 255, 255, 0.6);
+  mix-blend-mode: normal;
+
+}
+.fancybox-bg, .fancybox-container {
+  background: none;
+}
+.fancybox-slide--html {
+  @include media-max-width('sm') {padding: 0;}
+}
+.modal {
+  display: none;
+  padding: 60px;
+  background-color: var(--base-color2);
+  background: url(../img/modal-bg.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  position: relative;
+  overflow-y: auto;
+
+      @include media-max-width('sm') {
+        height: 100vh;
+        width: 100vw;
+        padding: 60px 15px 30px 15px;
+      }
+
+
+  .title-line {
+      color: #fff;
+      margin-bottom: 40px;
+        @include setFontBase(24px, #fff, 800, $lh : 36px, $ls : 0.05em);
+      text-transform: initial;
+      @include media-max-width('sm') {
+        font-size: 22px;
+        line-height: 33px;
+        margin-bottom: 30px;
+      }
+    }
+
+  &.has-text {
+    .title-line { margin-bottom: 20px;}
+  }
+
+    .close-arrow {
+      position: absolute;
+      right: 20px;
+      top: 50px;
+      @include media-max-width('sm') {
+        top: 16px;
+        right: 16px;
+      }
+
+    }
+
+    p{
+      color: #fff;
+      margin-bottom: 30px;
+    }
+
+
+}

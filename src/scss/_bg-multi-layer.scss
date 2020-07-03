@@ -1,0 +1,42 @@
+.relative {position: relative;}
+.bg-multi-layer {
+  display: block;
+  @include PosA();
+  z-index: -1;
+  mix-blend-mode: multiply;
+
+  &-inner {
+    position: relative;
+    padding-bottom: 58.33%;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+
+    &:after {
+      content: '';
+      display: block;
+      @include PosA();
+      background-color: var(--base-color2);
+      opacity: .9;
+      z-index: 0;
+      mix-blend-mode: multiply;
+    }
+  }
+  img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &.fit-all {
+    .bg-multi-layer-inner {
+      padding: 0;
+      height: 100%;
+    }
+    img { height: 100%; }
+
+
+
+  }
+}

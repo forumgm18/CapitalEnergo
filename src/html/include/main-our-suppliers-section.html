@@ -1,0 +1,59 @@
+<section class="main-our-suppliers">
+  <h2 class="title-line">нашим поставщикам</h2>
+  <div class="our-suppliers">
+    <form action="" class="our-suppliers-form">
+        <div class="lb">
+            <p>Если вы хотите стать нашим поставщиком  оборудования — оставьте заявку:</p>
+            <div class="form-line">
+              @@include('./include/page-blocks/form-line-select.html',{
+              "name" : "brand",
+              "placeholder" : "Бренд",
+              "dop_class" : "",
+              "title" : ["Бренд-1", "Бренд-2","Бренд-3","Бренд-4"],
+              "value" : ["1", "2","3","4"]
+              })
+            </div>
+            <div class="form-line">
+              @@include('./include/page-blocks/form-line-select.html',{
+              "name" : "type_of_goods",
+              "placeholder" : "Вид товара",
+              "dop_class" : "",
+              "title" : ["Вид товара - 1", "Вид товара - 2","Вид товара - 3","Вид товара - 4"],
+              "value" : ["1", "2","3","4"]
+              })
+            </div>
+            <div class="form-line">
+              @@include('./include/page-blocks/form-line-input.html',{ "type" : "tel", "name" : "client_phone", "placeholder" : "Номер телефона","dop_class" : "" })
+            </div>
+        </div>
+        <img class="our-suppliers-img" src="/img/el-panel.png">
+        <div class="rb">
+          <div class="form-line">
+            @@include('./include/page-blocks/form-line-select.html',{
+            "name" : "made_in",
+            "placeholder" : "Страна производитель",
+            "dop_class" : "",
+            "title" : ["Страна - 1", "Страна - 2","Страна - 3","Страна - 4"],
+            "value" : ["1", "2","3","4"]
+            })
+          </div>
+          <div class="form-line">
+            @@include('./include/page-blocks/form-line-input.html',{ "type" : "text", "name" : "client_name", "placeholder" : "Контактное лицо","dop_class" : "" })
+          </div>
+          <div class="form-line">
+            @@include('./include/page-blocks/form-line-input.html',{ "type" : "email", "name" : "client_email", "placeholder" : "E-mail","dop_class" : "" })
+          </div>
+          <div class="form-line">
+            <div class="form-item">
+              <a href="#" class="btn">
+                <svg class="icon icon-corner-left"><use xlink:href="#icon-corner-left"></use></svg>
+                <span>отправить</span>
+                <svg class="icon icon-corner-right"><use xlink:href="#icon-corner-right"></use></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+    </form>
+  </div>
+</section>

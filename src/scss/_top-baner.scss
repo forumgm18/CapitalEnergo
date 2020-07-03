@@ -1,0 +1,207 @@
+.main-baner {
+  //padding-top: 185px;
+  padding-bottom: 40px;
+  //margin-bottom: 35px;
+
+  //@include media-min-width('xl') {margin-bottom: 35px;}
+
+  @include media-max-width('xl') {
+    //padding-top: 30px;
+    padding-bottom: 15px;
+  }
+
+}
+.hero {
+    @include dFlex(center,center);
+    //margin-bottom: 222px;
+    margin-top: 128px;
+    margin-bottom: 158px;
+
+      @include media-max-width('xl') {
+        margin-top: 30px;
+        margin-bottom: 40px;
+      }
+
+
+      &-baner {
+        //border: 40px solid rgba(255, 255, 255, 0.26);
+        border: 40px solid rgba(128, 128, 128, 0.09);
+        mix-blend-mode: normal;
+        max-width: 812px;
+        padding: 17px 70px 24px;
+
+
+        @include media-max-width('xl') {
+          padding: 0;
+          border: none;
+        }
+
+          &-title {
+            @include setFontBase(60px,#fff,800, $lh : 82px, $ls : 0.02em);
+            text-transform: uppercase;
+            text-align: center;
+
+            margin-bottom: 17px;
+            z-index: 0;
+            position: relative;
+
+              @include media-max-width('xl') {
+                font-size: 26px;
+                line-height: 36px;
+                margin-bottom: 10px;
+              }
+
+
+              svg {
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 15px;
+                //color: #fff;
+                fill: currentColor;
+                z-index: 1;
+
+                @include media-max-width('xl') { display: none;}
+
+              }
+
+          }
+          &-content {
+            @include setFontBase(16px,#fff,$lh : 24px);
+
+            @include media-max-width('xl') {
+              font-size: 14px;
+              line-height: 21px;
+              //margin-bottom: 10px;
+            }
+
+          }
+      }
+
+      &-laqo {
+        @include media-min-width('xl') { display: none;}
+
+      }
+}
+
+.offer{
+  @include dFlex($ai : flex-end, $fw: wrap);
+
+
+    &-small {
+      @include dFlex($ai : center, $fw: wrap);
+
+      position: relative;
+      padding-left: 25px;
+      margin-left: 7px;
+      max-width: 450px;
+
+      @include media-max-width('xl') {
+        max-height: 164px;
+        margin-bottom: 60px;
+        width: 100%;
+        order: 1;
+      }
+
+
+      &:before, &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 1px;
+          border-left: 1px solid var(--base-color1);
+          height: calc( 50% - 18px );
+          left: 0;
+        }
+
+        &:before { top: 0; }
+        &:after { bottom: 0; }
+
+
+          &>svg {
+            position: absolute;
+            left: -7px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 16px;
+          }
+
+          &-title {
+            @include setFontBase(14px,#fff, $lh : 24px, $ls : 0.23em);
+            text-transform: lowercase;
+            width: 100%;
+            margin-bottom: 10px;
+
+          }
+          &-content {
+            @include setFontBase(16px,#fff, 500, $lh : 24px, $ls : 0.05em);
+            width: 100%;
+            margin-bottom: 12px;
+
+            max-width: 450px;
+
+            //@include media-max-width('xl') {  font-size: 14px; }
+
+
+
+          }
+          &-date {
+            @include setFontBase(14px,var(--gray-text), $ls : 0.05em);
+            margin-right: 27px;
+
+              @include media-max-width('xl') {  margin-bottom: 10px; }
+
+
+          }
+
+      .about-link {
+        @include media-max-width('xl') {  margin-bottom: 10px; }
+
+      }
+    }
+
+    &-detail {
+      @include dFlex(center,center, column,  wrap);
+      @include setFontBase(14px,#fff,500, $ls : 0.2em);
+      text-transform: uppercase;
+      margin: 0 auto;
+
+      @include media-max-width('xl') {
+        order: 3;
+        width: 100%;
+      }
+
+
+      &:after {
+        content: '';
+        display: block;
+        height: 40px;
+        width: 1px;
+        border-left: 1px solid #fff;
+
+      }
+
+      span {
+        width: 100%;
+        display: block;
+        margin-bottom: 4px;
+        text-align: center;
+      }
+    }
+
+    &-presentation {
+      @include setFontBase(16px,#fff,300, $ls : 0.1em);
+      text-transform: lowercase;
+
+        @include media-max-width('xl') {
+          order: 2;
+          font-size: 14px;
+          line-height: 24px;
+          margin-bottom: 50px;
+        }
+
+        @include media-max-width('md') { margin-bottom: 30px; }
+
+
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+ @@include('./include/head.html',{"title":"КЭПИТАЛ-ЭНЕРГО - Проекты"})
+<body >
+  <div class="blur">
+    <div class="container" >
+      <div class="content top-projects-bgr projects" >
+
+        @@include('./include/header.html')
+        <div class="direction-block ">
+          @@include('./include/page-blocks/top-title.html',{  "title" : "о компании"})
+          @@include('./include/page-blocks/project-item.html',{
+          "title" : "ОПТОВАЯ СЕТЬ СТРОИТЕЛЬНЫХ МАТЕРИАЛОВ «ПЕТРОВИЧ»",
+          "img" : "/img/servises/s1.jpg",
+          "text" : [
+                    "Поставка светотехнического оборудования. Консультационные услуги в части оптимизации проектных решений, подбор и поставка аналогов материалов и оборудования с целью оптимизации Технических и Финансовых характеристик контракта.",
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cupiditate delectus exercitationem impedit itaque labore nobis provident quisquam voluptas. Consequatur corporis cupiditate doloremque ex itaque iure odio repudiandae soluta tenetur!",
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cupiditate delectus exercitationem impedit itaque labore nobis provident quisquam voluptas. Consequatur corporis cupiditate doloremque ex itaque iure odio repudiandae soluta tenetur!",
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cupiditate delectus exercitationem impedit itaque labore nobis provident quisquam voluptas. Consequatur corporis cupiditate doloremque ex itaque iure odio repudiandae soluta tenetur!",
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cupiditate delectus exercitationem impedit itaque labore nobis provident quisquam voluptas. Consequatur corporis cupiditate doloremque ex itaque iure odio repudiandae soluta tenetur!",
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cupiditate delectus exercitationem impedit itaque labore nobis provident quisquam voluptas. Consequatur corporis cupiditate doloremque ex itaque iure odio repudiandae soluta tenetur!",
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cupiditate delectus exercitationem impedit itaque labore nobis provident quisquam voluptas. Consequatur corporis cupiditate doloremque ex itaque iure odio repudiandae soluta tenetur!",
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cupiditate delectus exercitationem impedit itaque labore nobis provident quisquam voluptas. Consequatur corporis cupiditate doloremque ex itaque iure odio repudiandae soluta tenetur!"
+          ],
+          })
+
+
+        </div>
+        <div class="projects-content">
+          @@include('./include/page-blocks/project-item-2.html',{
+          "title" : "ТВК «АВИАПАРК»",
+          "img" : "/img/projects/p2.png",
+          })
+
+          @@include('./include/page-blocks/project-item-2.html',{
+          "title" : "БЦ «КОМСИТИ»",
+          "img" : "/img/projects/p2.png",
+          })
+
+          @@include('./include/page-blocks/project-item-2.html',{
+          "title" : "БП «РУМЯНЦЕВО»",
+          "img" : "/img/projects/p2.png",
+          })
+
+
+        </div>
+
+
+
+        @@ include('./include/footer.html')
+      </div>
+    </div>
+
+  </div>
+  @@include('./include/modal.html')
+  @@include('./include/scripts.html')
+</body>
+</html>

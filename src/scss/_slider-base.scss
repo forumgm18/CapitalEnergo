@@ -1,0 +1,58 @@
+.slider {
+  &-nav {
+    @include dFlex();
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    @include media-max-width('lg') { top: -1px;       right: 24px;}
+
+    &-prev{
+      @include dFlex(center,center);
+      @include size(60px);
+      background-color: #fff;
+      cursor: pointer;
+      @include media-max-width('xl') {@include size(30px);}
+    }
+    &-next{
+      @include dFlex(center,center);
+      @include size(60px);
+      background-color: #fff;
+      cursor: pointer;
+      @include media-max-width('xl') {@include size(30px);}
+    }
+
+    svg {
+      font-size: 30px;
+      @include media-max-width('xl') {         font-size: 15px;}
+    }
+  }
+
+  &-pagination{
+    @include setFontBase(14px, var(--base-color1), $lh: 24px,$ls: 0.05em);
+    position: absolute;
+    bottom: 12px;
+
+    right: 12px;
+    z-index: 1;
+
+    @include media-max-width('lg') {
+      bottom: initial;
+      right: 41px;
+      //top: calc( 68vw - 70px);
+    }
+
+    span {
+
+
+      &:first-child {
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+
+  }
+
+}
+
+.slick-arrow.slick-hidden {  display: none!important; }

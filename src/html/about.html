@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+ @@include('./include/head.html',{"title":"КЭПИТАЛ-ЭНЕРГО - Направления"})
+<body >
+  <div class="blur">
+    <div class="container" >
+      <div class="content top-about-bgr" >
+
+        @@include('./include/header.html')
+        <div class="direction-block pb0">
+          @@include('./include/page-blocks/top-title.html',{  "title" : "о компании"})
+          <div class="about-content">
+            <div class="about-top">
+              <div class="about-title">Компания КЭПИТАЛ-ЭНЕРГО более 10 лет предлагает своим Заказчикам и Партнерам услуги в области Электроэнергетики, Инженерии и Строительства.</div>
+              <div class="offer-small">
+                <svg class="icon"><use xlink:href="#icon-logo-only"></use></svg>
+                <div class="offer-small-content">Коллектив «КЭПИТАЛ-ЭНЕРГО» постоянного совершенствуется для модернизации уже существующих направлений деятельности, а также, находится в постоянном поиске и мониторинге современных Инженерных трендов, для внедрения новейших технологий на Ваших объектах.</div>
+              </div>
+            </div>
+            <div class="about-text">
+              <p class="bold-left-line">Основой успешной и многолетней работы для Нас всегда были и остаются - приверженность, взятым на себя обязательствам, оговоренным на «старте» контракта, компетенции, обеспечивающие решение поставленных перед нами задач на максимуме их эффективности для наших Заказчиков и следование Нашей неизменной Цели – сосредоточить Высочайший Уровень сервиса, финансовых возможностей и профильных компетенций в рамках одного Холдинга  - «Capital-Enеrgo»</p>
+              <p>Компания «КЭПИТАЛ-ЭНЕРГО» открыта для новых Партнеров, новых Заказчиков, новых Проектов и предлагает Вам услуги в области Электроэнергетики, Инженерии и Строительства, со своей стороны гарантируя компетенции и честность в исполнении Обязательств!</p>
+              <p>На данном сайте Вы найдете информацию о Нас, а также, сможете ознакомиться с нашим портфолио и видами, предлагаемых услуг. В случае необходимости, мы с радостью и компетентно проконсультируем Вас по возникшим вопросам.</p>
+              <svg class="icon icon-corner-right"><use xlink:href="#icon-corner-right"></use></svg>
+
+            </div>
+
+            <div class="page-form">
+              <h2 class="title-line form-title">Прямое обращение к руководству компании</h2>
+              <form action="" class="form">
+                <div class="w50">
+                  <div class="form-line">
+                    @@include('./include/page-blocks/form-line-input.html',{ "type" : "text", "name" : "client_name", "placeholder" : "Ваше имя","dop_class" : "w50" })
+                    @@include('./include/page-blocks/form-line-input.html',{ "type" : "tel", "name" : "client_phone", "placeholder" : "Номер телефона","dop_class" : "w50" })
+                  </div>
+                  <div class="form-line">
+                    @@include('./include/page-blocks/form-line-input.html',{ "type" : "text", "name" : "company_name", "placeholder" : "Название организации","dop_class" : "" })
+                  </div>
+                </div>
+                <div class="w50">
+                  <div class="form-line">
+                    <div class="form-item">
+                      <div class="input-error">поле заполнено неверно</div>
+                      <textarea name="comments" placeholder="Дополнительные комментарии"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-line">
+                    <div class="form-item">
+                      <a href="#" class="btn">
+                        <svg class="icon icon-corner-left"><use xlink:href="#icon-corner-left"></use></svg>
+                        <span>Отправить заявку</span>
+                        <svg class="icon icon-corner-right"><use xlink:href="#icon-corner-right"></use></svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </form>
+
+            </div>
+
+
+
+          </div>
+        </div>
+
+
+
+        @@ include('./include/footer.html')
+      </div>
+    </div>
+
+  </div>
+  @@include('./include/modal.html')
+  @@include('./include/scripts.html')
+</body>
+</html>

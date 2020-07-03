@@ -1,0 +1,16 @@
+              <div class="card-outer @@ownerClass">
+                <div class="card-inner">
+                  <div class="card-img">
+                    <a @@linkAttr><img src="@@img" alt=""></a>
+                  </div>
+                  <div class="card-text-outer">
+                    <div class="card-text-inner">
+                      @@if (iconId != "") {<div class="card-text-img"><svg class="icon"><use xlink:href="@@iconId"></use></svg></div>}
+                      <a @@linkAttr class="card-title">@@title</a>
+                      @@if (blockLink === true) {    <a href="#" class="card-link"><svg class="icon"><use xlink:href="#icon-arrow-thin-right"></use></svg></a>}
+                    </div>
+                  </div>
+                  <svg class="icon icon-corner-right"><use xlink:href="#icon-corner-right"></use></svg>
+                </div>
+              </div>
+

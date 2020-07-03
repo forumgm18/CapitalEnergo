@@ -1,0 +1,12 @@
+<div class="form-item @@dop_class">
+  <div class="input-error">поле заполнено неверно</div>
+  <div class="select">
+    <input type="text" name="@@name" hidden>
+    <div class="select-value" data-placeholder="@@placeholder" data-default-value="1"><span>@@placeholder</span></div>
+    <ul class="select-dropdown">
+      @@for (var i = 0; i < title.length; i++) {
+      <li data-value="`+value[i]+`">`+title[i]+`</li>
+      }
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,211 @@
+.direction {
+  //position: relative;
+  //padding-top: 60px;
+  //padding-bottom: 156px;
+  //@include media-max-width('sm') {
+  //  padding-bottom: 164px;
+  //  padding-top: 6px;
+  //}
+
+  &-content-block {
+    //max-width: 630px;
+    max-width: 70%;
+    max-height: 500px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include media-max-width('md') {
+      max-width: calc(100vw - 30px);
+    }
+    @include media-max-width('sm') {
+      top: 30px;
+    }
+  }
+
+
+  &-title {
+    @include setFontBase(60px, #fff, 800, $lh: 82px, $ls: 0.02em);
+    margin-bottom: 17px;
+    overflow: hidden;
+
+
+    @include media-max-width('xxl') {
+      font-size: 36px;
+      line-height: 48px;
+      height: 96px;
+      //margin-bottom: 10px;
+    }
+    @include media-max-width('md') {
+      font-size: 26px;
+      line-height: 36px;
+      height: 72px;
+      margin-bottom: 10px;
+    }
+
+  }
+
+  &-text {
+    @include setFontBase(16px, #fff, $lh: 24px);
+
+    @include media-max-width('xl') {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+  }
+}
+.direction-top {
+  //@include dFlex();
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 156px;
+
+  @include media-max-width('sm') {
+    padding-bottom: 164px;
+    padding-top: 6px;
+  }
+
+      .direction-content{
+        position: relative;
+        width: 100%;
+        padding: 0;
+        min-height: 350px;
+
+        @include media-max-width('md') {padding-top: 36px;}
+      }
+
+      .title-top-link {
+        //@include dFlex($ai:center);
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 4px;
+        color: #fff;
+
+          h2 {
+            margin-left: 15px;
+            @include media-min-width('md') {display: none;}
+          }
+      }
+
+}
+
+.direction-detail {
+      &-block {
+        padding-top: 120px;
+        padding-bottom: 80px;
+          @include media-max-width('md') {padding-top: 60px;padding-bottom: 30px;}
+
+        .title-line {color: var(--title-base-color); }
+      }
+
+      &-links{
+        @include dFlex(space-between,stretch, row, wrap);
+        width: 100%;
+        padding-top: 40px;
+        @include media-max-width('md') {padding-top: 30px;}
+
+      }
+
+}
+
+
+.dir-content-bgr {
+  margin: 0 auto;
+    svg{
+      font-size: 510px;
+      opacity: .1;
+      display: block;
+      margin: 0 auto;
+
+      @include media-max-width('sm') {
+        font-size: 350px;
+        //font-size: 100vw;
+        //margin: 0 -30px;
+        position: absolute;
+        top: 35px;
+        left: 50%;
+        transform: translateX(-50%);
+
+      }
+    }
+}
+.dir-detail {
+
+  &-item {
+    position: relative;
+    padding: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: var(--base-color2);
+    margin-bottom: 40px;
+    width: 30%;
+    width: calc( (100% - 80px) / 3);
+
+        @include media-max-width('md') {
+          width: calc( (100% - 30px) / 2);
+          margin-bottom: 30px;
+          padding: 16px;
+
+        }
+        @include media-max-width('sm') {
+          width: 100%;
+          margin-bottom: 20px;
+
+        }
+
+        &:hover {
+          &:after {
+            content: '';
+            @include PosA();
+            display: block;
+            background: #000;
+            opacity: 20%;
+          }
+        }
+
+        .icon-corner-right {
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+          --base-color2: var(--base-color1);
+
+          @include media-max-width('xl') {
+            right: 5px;
+            bottom: 5px;
+
+          }
+
+          }
+
+
+  }
+  &-bgr {
+    position: absolute;
+    font-size: 116px;
+    top: -38px;
+    right: -23px;
+    opacity: .4;
+    z-index: 0;
+      @include media-max-width('xl') {
+        font-size: 68px;
+        top: -20px;
+        right: -16px;
+
+      }
+
+  }
+  &-text {
+    @include setFontBase(18px,#fff, 800, $lh : 28px, $ls : 0.05em);
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+      @include media-max-width('md') {
+        font-size: 16px;
+        line-height: 24px;
+      }
+  }
+
+}

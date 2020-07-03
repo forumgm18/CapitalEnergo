@@ -1,0 +1,107 @@
+.icon {
+  display: inline-block;
+  font-size: 30px;
+  height: 1em;
+  width: 1em;
+  min-width: 1em;
+  fill: inherit;
+  stroke: inherit;
+
+    &-arrow-bold-left {
+      @include icon-size(30);
+    }
+
+    &-arrow-right {
+      @include icon-size(30);
+    }
+
+    &-arrow-right-2 {
+      @include icon-size(30);
+    }
+
+    &-arrow-thin-left {
+      @include icon-size(30);
+    }
+
+    &-arrow-thin-right {
+      @include icon-size(30);
+    }
+
+    &-clip {
+      @include icon-size(30);
+    }
+
+    &-consult {
+      @include icon-size(30);
+    }
+
+    &-corner-left {
+      @include icon-size(30);
+    }
+
+    &-corner-right {
+      @include icon-size(30);
+      bottom: 0;
+      right: 0;
+      position: absolute;
+
+    }
+
+    &-dropdown {
+      @include icon-size(30);
+    }
+
+    &-education {
+      @include icon-size(30);
+    }
+
+    &-electronic {
+      @include icon-size(30);
+    }
+
+    &-labor {
+      @include icon-size(30);
+    }
+
+    &-lightning {
+      @include icon-size(30);
+    }
+
+    &-lightning-round {
+      @include icon-size(30);
+    }
+
+    &-location {
+      @include icon-size(30);
+    }
+
+    &-mail {
+      @include icon-size(30);
+    }
+
+    &-nav {
+      @include icon-size(30);
+    }
+
+    &-pdf {
+      @include icon-size(30);
+    }
+
+    &-phone {
+      @include icon-size(30);
+    }
+
+    &-plus {
+      @include icon-size(30);
+    }
+
+    &-ups {
+      @include icon-size(30);
+    }
+
+    &-ups {
+      @include icon-size(30);
+
+    }
+
+}

@@ -1,0 +1,228 @@
+.file-input,
+input:not([type=radio]),
+input:not([type=checkbox]),
+textarea
+{
+  background-color: transparent;
+  padding: 12px 17px;
+  border: 1px solid #FFFFFF;
+  width: 100%;
+
+  @include setFontBase(16px,var(--base-color3), $lh : 24px, $ls : 0.05em);
+    @include media-max-width('md') { font-size: 14px;}
+
+
+  &::placeholder {
+      @include setFontBase(16px,var(--base-color3), $lh : 24px, $ls : 0.05em);
+        @include media-max-width('md') { font-size: 14px;}
+    }
+
+    &:focus, &:active {    border-color: var(--base-color1);    }
+    //&:invalid {
+    //  border-color: var(--error-color3);
+    //}
+
+}
+
+textarea {
+  min-height: 120px;
+  //&:placeholder {
+  //  @include setFontBase(16px,var(--base-color3), $lh : 24px, $ls : 0.05em);
+  //  @include media-max-width('md') { font-size: 14px;}
+  //}
+
+}
+
+
+input[type=radio]:checked,
+input[type=checkbox]:checked{
+
+    + span {
+      font-weight: 800;
+      border-bottom-color: var(--base-color1);
+      border-bottom-width: 3px;
+
+    }
+}
+.file-input {
+  padding: 0;
+  @include dFlex($ai:center);
+    label {
+      cursor: pointer;
+      padding: 9px 17px;
+    }
+    span {
+      flex: 1 1 auto;
+      padding: 12px 17px;
+      overflow: hidden;
+    }
+    svg {
+      font-size: 30px;
+    }
+}
+
+.form {
+
+
+  &-line {
+    @include dFlex(space-between,center,row,wrap);
+    width: 100%;
+  }
+  &-item {
+    margin-bottom: 20px;
+    //flex: 1 1 100%;
+    width: 100%;
+
+
+      &.w50 {
+        //flex: 1 1 48%;
+        width: calc( 50% - 12px);
+          @include media-max-width('xl') { width: 100%; }
+          @include media-max-width('lg') { width: calc( 50% - 12px); }
+          @include media-max-width('sm') { width: 100%; }
+
+      }
+
+      &.error {
+        position: relative;
+
+          .input-error {
+            display: block;
+            position: absolute;
+            top: -17px;
+            left: 0;
+
+
+          }
+        .file-input,
+        input:not([type=radio]),
+        input:not([type=checkbox]),
+        textarea, .select, .select-dropdown {
+          border-color: var(--error-color3);
+        }
+
+
+      }
+
+  }
+
+}
+
+.input-error {
+  @include setFontBase(10px,var(--error-color3), $lh : 24px, $ls : 0.05em);
+  display: none;
+}
+.client-radio {
+  cursor: pointer;
+  height: 50px;
+  margin-bottom: 20px;
+
+    &:not(:last-child) {
+      margin-right: 40px;
+
+          @include media-max-width('xl') { margin-right: 15px;}
+          @include media-max-width('lg') { margin-right: 40px; min-width: calc( 50% - 40px);}
+          @include media-max-width('sm') { margin-right: 15px; min-width: 80px;}
+    }
+
+    &:last-child {
+      flex: 1 1 auto;
+        span { min-width: 140px;}
+    }
+
+  span{
+    position: relative;
+    display: inline-block;
+    padding: 12px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+
+    @include setFontBase(16px,var(--base-color3), $lh : 24px, $ls : 0.05em);
+    border-bottom: 1px solid #fff;
+  }
+
+}
+
+.select {
+  border: 1px solid #fff;
+  width: 100%;
+  position: relative;
+
+  &:focus, &:active {    border-color: var(--base-color1);    }
+
+
+  &-value{
+    @include setFontBase(16px,var(--base-color3), $lh : 24px, $ls : 0.05em);
+    width: 100%;
+    padding: 0 17px;
+    cursor: pointer;
+      @include media-max-width('md') { font-size: 14px;}
+
+
+    span {
+        @include dFlex(space-between,center);
+        padding: 12px 0px 11px;
+        border-bottom: 1px solid transparent;
+
+          &:after {
+            content: '';
+            display: block;
+            @include size(8px);
+            border: 0px solid var(--base-color1);
+            border-left-width: 1px;
+            border-bottom-width: 1px;
+            transform: rotate(-45deg);
+            transition: .3s;
+          }
+
+      }
+
+      &.open {
+        background-color: var(--base-color2);
+
+        span {
+           border-bottom-color: #fff;
+
+           &:after {
+             transform: rotate(135deg);
+           }
+
+         }
+
+
+           + .select-dropdown {  display: block;  }
+      }
+
+
+  }
+  &-dropdown{
+    @include setFontBase(16px,var(--base-color3), $lh : 24px, $ls : 0.05em);
+    width: calc( 100% + 2px );
+    display: none;
+    position: absolute;
+    left: -1px;
+    top: 100%;
+    background-color: var(--base-color2);
+    z-index: 99;
+    padding: 9px 0;
+
+    border: 1px solid #fff;
+    border-top: none;
+      @include media-max-width('md') { font-size: 14px;}
+
+
+    li {
+      @include setFontBase(16px,var(--base-color3), $lh : 24px, $ls : 0.05em);
+      background-color: transparent;
+      cursor: pointer;
+      padding: 6px 17px;
+        @include media-max-width('md') { font-size: 14px;}
+
+
+      &:hover, &:focus {
+          color: var(--base-color1);
+        }
+    }
+  }
+}

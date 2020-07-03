@@ -1,0 +1,85 @@
+<section class="main-emergency-call-service">
+  <div class="call-service-text triangle">
+    <h2 class="title-line">сервис аварийного вызова</h2>
+
+    <p>Услуга «аварийный сервис» от КЭПИТАЛ-ЭНЕРГО предлагает нашим Заказчикам сервис экстренной электротехнической помощи на условиях разовых и рамочных сервисных Договоров.</p>
+    <p>Мы окажем техническую помощь и консультационную поддержку каждому, обратившемуся к Нам Заказчику. По желанию Заказчика, мы подготовим и предложим проект Сервисного Договора, индивидуально, и исходя из специфики Объекта.</p>
+    <div class="call-service-links">
+      <div>
+        <span class="call-service-label">Просто наберите с телефона</span>
+        <span>или заполните заявку справа</span>
+      </div>
+      <a href="tel:*9110" class="btn-transparent">
+        <svg class="icon icon-corner-left"><use xlink:href="#icon-corner-left"></use></svg>
+        <span>*9110</span>
+        <svg class="icon icon-corner-right"><use xlink:href="#icon-corner-right"></use></svg>
+      </a>
+
+    </div>
+    <div class="call-service-label">Виды работ и аварийных ситуаций:</div>
+    <ul class="marker-plus">
+      <li>определение мест обрыва/повреждения кабельной линии 10/0,4 кВ</li>
+      <li>авария в щитовых и на шинных мостах 0,4 кВ</li>
+      <li>авария в трансформаторных подстанциях 10/6/0,4 кВ</li>
+      <li>авария в щитовых и на шинных мостах 10/0,4 кВ</li>
+      <li>установка регистратора параметров сети</li>
+      <li>ремонт освещения</li>
+      <li>замеры сопротивлений изоляции и др.</li>
+      <li>автоматизация Объекта. Ремонт и ПНР. Планово-предупредительные работы</li>
+      <li>диспетчеризация. ПО. Пульты КД, СКУД, Видео и др</li>
+    </ul>
+  </div>
+  <div class="form-block">
+    <p>Мы окажем техническую помощь каждому, обратившемуся  к нам Клиенту и предложим последующий Сервисный Контракт с расширенным перечнем Услуг сервиса, оптимальным и специальным Бюджетом для Вас</p>
+    <form action="" class="form">
+      <div class="form-line">
+        <label class="client-radio">
+          <input type="radio" name="client" value="old" checked hidden>
+          <span>Клиент</span>
+        </label>
+        <label class="client-radio">
+          <input type="radio" name="client" value="new" hidden>
+          <span>Новый заказчик</span>
+        </label>
+      </div>
+      <div class="form-line">
+        @@include('./include/page-blocks/form-line-input.html',{ "type" : "text", "name" : "contract", "placeholder" : "Номер договора","dop_class" : "" })
+      </div>
+      <div class="form-line">
+        @@include('./include/page-blocks/form-line-input.html',{ "type" : "text", "name" : "client_name", "placeholder" : "Ваше имя","dop_class" : "w50" })
+        @@include('./include/page-blocks/form-line-input.html',{ "type" : "tel", "name" : "client_phone", "placeholder" : "Номер телефона","dop_class" : "w50 error" })
+      </div>
+
+      <div class="form-line">
+        @@include('./include/page-blocks/form-line-select.html',{
+        "name" : "emergency_situation",
+        "placeholder" : "Аварийная ситуация",
+        "dop_class" : "error",
+        "title" : ["Ситуация-1", "Ситуация-2","Ситуация-3","Ситуация-4"],
+        "value" : ["1", "2","3","4"]
+        })
+
+      </div>
+
+      <div class="form-line">
+        <div class="form-item">
+          <div class="input-error">поле заполнено неверно</div>
+          <textarea name="accident_details" placeholder="Опишите детали аварии"></textarea>
+        </div>
+      </div>
+
+      <div class="form-line">
+        <div class="form-item">
+          <a href="#" class="btn">
+            <svg class="icon icon-corner-left"><use xlink:href="#icon-corner-left"></use></svg>
+            <span>подробнее</span>
+            <svg class="icon icon-corner-right"><use xlink:href="#icon-corner-right"></use></svg>
+          </a>
+        </div>
+      </div>
+
+
+
+    </form>
+  </div>
+</section>

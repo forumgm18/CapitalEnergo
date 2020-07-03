@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+ @@include('./include/head.html',{"title":"КЭПИТАЛ-ЭНЕРГО - Направления"})
+<body >
+  <div class="blur">
+    <div class="container" >
+      <div class="content top-products-bgr" >
+
+        @@include('./include/header.html')
+        <div class="direction-block">
+          @@include('./include/page-blocks/top-title.html',{  "title" : "Продукция"})
+          <div class="products-content">
+            <div class="text-full">
+              <p>Основными принципами нашей компании, при поставках электротехнической продукции и строительных материалов, являются: максимальный сервис и оперативность, начиная с полной технической консультации клиента по проекту или спецификации и заканчивая доставкой товара в кратчайшие сроки на объект.</p>
+              <p>В данном разделе вы можете оставить заявку на поставку нужного оборудования</p>
+            </div>
+
+
+              @@include('./include/page-blocks/prod-item.html',{
+              "ownerClass" : "product-item",
+              "title" : "КТП и БКТП",
+              "img" : "/img/products/p-1.jpg",
+              "iconId" : "",
+              "blockLink" : false,
+              "linkAttr" : "data-fancybox='' data-src='#purchaseOrderModal' data-modal='true' href='javascript:;'"
+              })
+
+              @@include('./include/page-blocks/prod-item.html',{
+              "ownerClass" : "product-item",
+              "title" : "Щитовое оборудование",
+              "img" : "/img/products/p-2.jpg",
+              "iconId" : "",
+              "blockLink" : false,
+              "linkAttr" : "data-fancybox='' data-src='#equipmentSupplyModal' data-modal='true' href='javascript:;'"
+
+            })
+
+              @@include('./include/page-blocks/prod-item.html',{
+              "ownerClass" : "product-item",
+              "title" : "Кабельные системы обогрева",
+              "img" : "/img/products/p-3.jpg",
+              "iconId" : "",
+              "blockLink" : false,
+              "linkAttr" : "data-fancybox='' data-src='#purchaseOrderModal' data-modal='true' href='javascript:;'"
+              })
+
+              @@include('./include/page-blocks/prod-item.html',{
+              "ownerClass" : "product-item",
+              "title" : "Электро-измерительная лаборатория",
+              "img" : "/img/products/p-4.jpg",
+              "iconId" : "",
+              "blockLink" : false,
+              "linkAttr" : "data-fancybox='' data-src='#equipmentSupplyModal' data-modal='true' href='javascript:;'"
+            })
+
+              @@include('./include/page-blocks/prod-item.html',{
+              "ownerClass" : "product-item",
+              "title" : "Кабель и провод",
+              "img" : "/img/products/p-5.jpg",
+              "iconId" : "",
+              "blockLink" : false,
+              "linkAttr" : "data-fancybox='' data-src='#purchaseOrderModal' data-modal='true' href='javascript:;'"
+              })
+
+              @@include('./include/page-blocks/prod-item.html',{
+              "ownerClass" : "product-item",
+              "title" : "Эксклюзив CAPITAL-ENERGO",
+              "img" : "/img/products/p-6.jpg",
+              "iconId" : "",
+              "blockLink" : false,
+              "linkAttr" : "data-fancybox='' data-src='#purchaseOrderModal' data-modal='true' href='javascript:;'"
+
+              })
+
+
+          </div>
+        </div>
+
+
+        <div class="brand-section">
+          <h2 class="title-line">Бренды</h2>
+
+          <div class="brand-block">
+            <div class="slider-nav">
+              <div class="slider-nav-prev">
+                <svg class="icon"><use xlink:href="#icon-arrow-thin-left"></use></svg>
+              </div>
+              <div class="slider-nav-next">
+                <svg class="icon"><use xlink:href="#icon-arrow-thin-right"></use></svg>
+              </div>
+            </div>
+<!--            <div class="slider-pagination"></div>-->
+
+            <div class="brand-slider">
+              <div class="brand-item">
+                <a href="#"><img src="/img/brand/b1.png" alt="Бренд #1"></a>
+                <a href="#"><img src="/img/brand/b2.png" alt="Бренд #2"></a>
+              </div>
+              <div class="brand-item">
+                <a href="#"><img src="/img/brand/b3.png" alt="Бренд #3"></a>
+                <a href="#"><img src="/img/brand/b4.png" alt="Бренд #4"></a>
+              </div>
+              <div class="brand-item">
+                <a href="#"><img src="/img/brand/b5.png" alt="Бренд #5"></a>
+                <a href="#"><img src="/img/brand/b3.png" alt="Бренд #3"></a>
+              </div>
+              <div class="brand-item">
+                <a href="#"><img src="/img/brand/b5.png" alt="Бренд #5"></a>
+                <a href="#"><img src="/img/brand/b2.png" alt="Бренд #2"></a>
+              </div>
+              <div class="brand-item">
+                <a href="#"><img src="/img/brand/b4.png" alt="Бренд #4"></a>
+                <a href="#"><img src="/img/brand/b1.png" alt="Бренд #1"></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        @@ include('./include/footer.html')
+      </div>
+    </div>
+
+  </div>
+  @@include('./include/modal.html')
+  @@include('./include/scripts.html')
+</body>
+</html>

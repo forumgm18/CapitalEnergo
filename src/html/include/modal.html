@@ -1,0 +1,132 @@
+<div class="modal" id="urgentFeedbackModal">
+  <a href="javascript:;" class="close-arrow" data-fancybox-close>
+    <svg class="icon"><use xlink:href="#icon-arrow-thin-left"></use></svg>
+  </a>
+
+  <h2 class="title-line">Срочная <br> обратная связь</h2>
+
+  <div class="modal-content">
+    <form action="" class="form">
+      <div class="form-line">
+        @@include('./include/page-blocks/form-line-input.html',{ "type" : "text", "name" : "client_name", "placeholder" : "Ваше имя","dop_class" : "w50" })
+        @@include('./include/page-blocks/form-line-input.html',{ "type" : "tel", "name" : "client_phone", "placeholder" : "Номер телефона","dop_class" : "w50" })
+      </div>
+      <div class="form-line">
+        @@include('./include/page-blocks/form-line-input.html',{ "type" : "text", "name" : "company_name", "placeholder" : "Название организации","dop_class" : "" })
+      </div>
+
+      <div class="form-line">
+        <div class="form-item">
+          <div class="input-error">поле заполнено неверно</div>
+          <textarea name="comments" placeholder="Дополнительные комментарии"></textarea>
+        </div>
+      </div>
+      <div class="form-line">
+        <div class="form-item">
+          <div class="input-error">загрузите ваш файл</div>
+          <div class="file-input" data-placeholder="Прикрепить файлы">
+            <span>Прикрепить файлы</span>
+            <label>
+              <input type="file" name="file" placeholder="Прикрепить файлы" hidden>
+              <svg class="icon"><use xlink:href="#icon-clip"></use></svg>
+            </label>
+          </div>
+        </div>
+
+      </div>
+      <div class="form-line">
+        <div class="form-item">
+          <a href="#" class="btn">
+            <svg class="icon icon-corner-left"><use xlink:href="#icon-corner-left"></use></svg>
+            <span>Отправить заявку</span>
+            <svg class="icon icon-corner-right"><use xlink:href="#icon-corner-right"></use></svg>
+          </a>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<div class="modal has-text" id="purchaseOrderModal">
+  <a href="javascript:;" class="close-arrow" data-fancybox-close>
+    <svg class="icon"><use xlink:href="#icon-arrow-thin-left"></use></svg>
+  </a>
+
+  <h2 class="title-line">Заказ  <br> на поставку</h2>
+  <div class="modal-content">
+    <p>Просто отправьте нам свой заказ, остальное сделаем мы!</p>
+    <form action="" class="form">
+      <div class="form-line">
+        @@include('./include/page-blocks/form-line-input.html',{ "type" : "text", "name" : "client_name", "placeholder" : "Ваше имя","dop_class" : "w50" })
+        @@include('./include/page-blocks/form-line-input.html',{ "type" : "tel", "name" : "client_phone", "placeholder" : "Номер телефона","dop_class" : "w50" })
+      </div>
+      <div class="form-line">
+        @@include('./include/page-blocks/form-line-input.html',{ "type" : "text", "name" : "company_name", "placeholder" : "Название организации","dop_class" : "" })
+      </div>
+
+      <div class="form-line">
+        <div class="form-item">
+          <div class="input-error">поле заполнено неверно</div>
+          <textarea name="comments" placeholder="Дополнительные комментарии"></textarea>
+        </div>
+      </div>
+      <div class="form-line">
+        <div class="form-item">
+          <a href="#" class="btn">
+            <svg class="icon icon-corner-left"><use xlink:href="#icon-corner-left"></use></svg>
+            <span>Отправить заявку</span>
+            <svg class="icon icon-corner-right"><use xlink:href="#icon-corner-right"></use></svg>
+          </a>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<div class="modal" id="equipmentSupplyModal">
+  <a href="javascript:;" class="close-arrow" data-fancybox-close>
+    <svg class="icon"><use xlink:href="#icon-arrow-thin-left"></use></svg>
+  </a>
+
+  <h2 class="title-line">Оставить заявку <br> на поставку обрудования</h2>
+
+  <div class="modal-content">
+    <form action="" class="form">
+      <div class="form-line">
+        @@include('./include/page-blocks/form-line-input.html',{ "type" : "text", "name" : "client_name", "placeholder" : "Ваше имя","dop_class" : "w50" })
+        @@include('./include/page-blocks/form-line-input.html',{ "type" : "tel", "name" : "client_phone", "placeholder" : "Номер телефона","dop_class" : "w50" })
+      </div>
+      <div class="form-line">
+        @@include('./include/page-blocks/form-line-select.html',{
+        "name" : "emergency_situation",
+        "placeholder" : "Выберите категорию продукции",
+        "dop_class" : "",
+        "title" : ["Категория-1", "Категория-2","Категория-3","Категория-4"],
+        "value" : ["1", "2","3","4"]
+        })
+
+      </div>
+
+      <div class="form-line">
+        <div class="form-item">
+          <div class="input-error">поле заполнено неверно</div>
+          <textarea name="comments" placeholder="Дополнительные комментарии"></textarea>
+        </div>
+      </div>
+      <div class="form-line">
+        <div class="form-item">
+          <a href="#" class="btn">
+            <svg class="icon icon-corner-left"><use xlink:href="#icon-corner-left"></use></svg>
+            <span>Отправить заявку</span>
+            <svg class="icon icon-corner-right"><use xlink:href="#icon-corner-right"></use></svg>
+          </a>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+

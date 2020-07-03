@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+ @@include('./include/head.html',{"title":"КЭПИТАЛ-ЭНЕРГО - Направления"})
+<body >
+  <div class="blur">
+    <div class="container" >
+      <div class="content relative " >
+        @@include('./include/page-blocks/bg-multi-layer.html', {
+        "fit" : true,
+        "paddingBottomClass" : "",
+        "img" : "/img/servises/s1.jpg"
+        })
+
+        @@include('./include/header.html')
+        <div class="direction-top">
+          <a href="#" class="title-top-link">
+            <svg class="icon"><use xlink:href="#icon-arrow-thin-left"></use></svg>
+            <h2 class="title-vertical">Наши направления</h2>
+          </a>
+          <div class="direction-content">
+            <div class="dir-content-bgr">
+              <svg class="icon"><use xlink:href="#icon-lightning-round"></use></svg>
+            </div>
+            <div class="direction-content-block">
+              <div class="direction-title">Электроэнергетика – направление деятельности с которого </div>
+              <p class="direction-text">Электроэнергетика – направление деятельности с которого мы начали свой Бизнес и на сегодня имеем все необходимые компетенции, начиная с низковольтных сетей управления, сигнализации, IT, диспетчеризации и заканчивая силовыми распределительными сетями и оборудованием 110 кВ.</p>
+              <p class="direction-text">Сформированные договорные отношения с поставщиками технологического оборудования и материалов, позволяют нам предлагать оптимальные решения для наших Заказчиков по приемлемым бюджетам и срокам реализации.</p>
+            </div>
+          </div>
+      </div>
+      </div>
+
+      <div class="content" >
+        <div class="direction-detail-block">
+          <h2 class="title-line">Перечень услуг</h2>
+
+          <div class="direction-detail-links">
+              @@include('./include/page-blocks/dir-detail-item.html',{
+              "text" : "Электромонтаж силовых распределительных сетей и оборудования до 110 кВ;",
+              "modalID" : "#urgentFeedbackModal",
+              "svg": ""
+              })
+
+              @@include('./include/page-blocks/dir-detail-item.html',{
+              "text" : "Электромонтаж сети освещения",
+              "modalID" : "#urgentFeedbackModal",
+              "svg": ""
+              })
+
+              @@include('./include/page-blocks/dir-detail-item.html',{
+              "text" : "Электромонтаж сети управления и диспетчеризации",
+              "modalID" : "#urgentFeedbackModal",
+              "svg": ""
+              })
+
+              @@include('./include/page-blocks/dir-detail-item.html',{
+              "text" : "Кабельные системы обогрева дорог/кровель/трубопроводов/ технологического оборудования",
+              "modalID" : "#urgentFeedbackModal",
+              "svg": ""
+              })
+
+              @@include('./include/page-blocks/dir-detail-item.html',{
+              "text" : "Строительство трансформаторных подстанций",
+              "modalID" : "#urgentFeedbackModal",
+              "svg": ""
+              })
+
+              @@include('./include/page-blocks/dir-detail-item.html',{
+              "text" : "Монтаж низковольтного щитового распределительного оборудования до 6300А",
+              "modalID" : "#urgentFeedbackModal",
+              "svg": ""
+              })
+
+              @@include('./include/page-blocks/dir-detail-item.html',{
+              "text" : "Сервис и техническое обслуживание сетей и оборудования",
+              "modalID" : "#urgentFeedbackModal",
+              "svg": ""
+              })
+
+              @@include('./include/page-blocks/dir-detail-item.html',{
+              "text" : "Планово-предупредительные работы",
+              "modalID" : "#urgentFeedbackModal",
+              "svg": ""
+              })
+
+              @@include('./include/page-blocks/dir-detail-item.html',{
+              "text" : "Автоматизация и КИП",
+              "modalID" : "#urgentFeedbackModal",
+              "svg": ""
+              })
+
+              @@include('./include/page-blocks/dir-detail-item.html',{
+              "text" : "Слаботочные сети сигнализации/диспетчеризации/управления и контроля",
+              "modalID" : "#urgentFeedbackModal",
+              "svg": ""
+              })
+
+              @@include('./include/page-blocks/dir-detail-item.html',{
+              "text" : "Устранение аварий в ТП 10/0,4. Ремонт обрывов кабельных линий. Устранение последствий аварий в НКУ",
+              "modalID" : "#urgentFeedbackModal",
+              "svg": ""
+              })
+
+              @@include('./include/page-blocks/dir-detail-item.html',{
+              "text" : "Связаться с нами",
+              "modalID" : "#urgentFeedbackModal",
+              "svg": "none"
+              })
+
+          </div>
+        </div>
+
+        @@include('./include/main-our-projects-section.html',{  "title" : "Реализованные проекты по электроэнергетике" })
+
+
+        @@ include('./include/footer.html')
+      </div>
+    </div>
+
+  </div>
+  @@include('./include/modal.html')
+  @@include('./include/scripts.html')
+</body>
+</html>

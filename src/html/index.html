@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./include/head.html',{"title":"КЭПИТАЛ-ЭНЕРГО"})
+
+<body >
+<style>
+    .pages {
+        background-color: #1F306A;
+        margin-bottom: 30px;
+    }
+    .pages-links {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .pages-links a {
+        max-width: 20%;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+
+</style>
+
+<div class="blur">
+    <div style="display: none;">
+    <!--    <svg class="icon"><use xlink:href="#icon-arrow-bold-left"></use></svg>-->
+    <!--    <svg class="icon"><use xlink:href="#icon-arrow-right"></use></svg>-->
+    <!--    <svg class="icon"><use xlink:href="#icon-arrow-right-2"></use></svg>-->
+    <!--    <svg class="icon"><use xlink:href="#icon-arrow-thin-left"></use></svg>-->
+    <!--    <svg class="icon"><use xlink:href="#icon-arrow-thin-right"></use></svg>-->
+    <!--    <svg class="icon"><use xlink:href="#icon-clip"></use></svg>-->
+    <!--    <svg class="icon"><use xlink:href="#icon-consult"></use></svg>-->
+    <!--    <svg class="icon"><use xlink:href="#icon-corner-left"></use></svg>-->
+    <!--    <svg class="icon"><use xlink:href="#icon-corner-right"></use></svg>-->
+    <!--    <svg class="icon"><use xlink:href="#icon-dropdown"></use></svg>-->
+    <!--    <svg class="icon"><use xlink:href="#icon-education"></use></svg>-->
+    <!--    <svg class="icon"><use xlink:href="#icon-electronic"></use></svg>-->
+    <!--    <svg class="icon"><use xlink:href="#icon-labor"></use></svg>-->
+    <!--    <svg class="icon"><use xlink:href="#icon-lightning"></use></svg>-->
+    <!--    <svg class="icon"><use xlink:href="#icon-lightning-round"></use></svg>-->
+    <!--    <svg class="icon"><use xlink:href="#icon-location"></use></svg>-->
+    <!--    <svg class="icon"><use xlink:href="#icon-mail"></use></svg>-->
+    <!--    <svg class="icon"><use xlink:href="#icon-nav"></use></svg>-->
+    <!--    <svg class="icon"><use xlink:href="#icon-pdf"></use></svg>-->
+    <!--    <svg class="icon"><use xlink:href="#icon-phone"></use></svg>-->
+    <!--    <svg class="icon"><use xlink:href="#icon-plus"></use></svg>-->
+    <!--    <svg class="icon"><use xlink:href="#icon-ups"></use></svg>    -->
+    <!--    <svg class="icon"><use xlink:href="#icon-logo-only"></use></svg>-->
+    <!--    <svg class="icon"><use xlink:href="#icon-r"></use></svg>-->
+
+    <!--    <svg class="icon"><use xlink:href="#icon-milling-machine"></use></svg>-->
+    <!--    <svg class="icon"><use xlink:href="#icon-repairing-service"></use></svg>-->
+    </div>
+    <div class="container">
+        <div class="content pages">
+            @@include('./include/header.html')
+        </div>
+        <div class="content">
+            <div class="pages-links">
+                <a href="/main.html" class="btn">Главная</a>
+                <a href="/directions.html" class="btn">Направления</a>
+                <a href="/directions-v2.html" class="btn">Направления - v2</a>
+                <a href="/directions-detail.html" class="btn">Направления - детально</a>
+                <a href="/products.html" class="btn">Продукция</a>
+                <a href="/projects.html" class="btn">Проекты</a>
+                <a href="/about.html" class="btn">О Компании</a>
+                <a href="/contacts.html" class="btn">Контакты</a>
+            </div>
+        @@include('./include/footer.html')
+    </div>
+    </div>
+</div>
+    @@include('./include/modal.html')
+
+@@include('./include/scripts.html')
+
+</body>
+</html>

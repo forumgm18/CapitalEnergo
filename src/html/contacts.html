@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+ @@include('./include/head.html',{"title":"КЭПИТАЛ-ЭНЕРГО - Направления"})
+<body >
+  <div class="blur">
+    <div class="container" >
+      <div class="content top-contacts-bgr" >
+
+        @@include('./include/header.html')
+        <div class="direction-block contacts">
+          @@include('./include/page-blocks/top-title.html',{  "title" : "Контакты"})
+          <div class="contact-block">
+            <div class="contact-content">
+              <div class="contact-info">
+                <div class="contact-title">
+                  <svg class="icon"><use xlink:href="#icon-logo-only"></use></svg>
+                  <span>ООО «КЭПИТАЛ-ЭНЕРГО»</span>
+                </div>
+                <div class="contact-info-content">
+                  <a href="#" class="contact-item">
+                    <svg class="icon"><use xlink:href="#icon-location"></use></svg>
+                    <span>г. Москва, ул. Салтыковская, д. 8, офис 208</span>
+                  </a>
+                  <div class="contact-item">
+                    <svg class="icon"><use xlink:href="#icon-phone"></use></svg>
+                    <span class="phone">
+                      <span>
+                        <span>тел.: </span>
+                        <a href="tel:84953801078">(495) 380-10-78, </a>
+                      </span>
+                      <span>
+                        <span>факс: </span>
+                        <a href="tel:84992703888">(499) 270-38-88</a>
+                      </span>
+                    </span>
+                  </div>
+                  <a href="mailto:info@capital-energo.ru" class="contact-item">
+                    <svg class="icon"><use xlink:href="#icon-mail"></use></svg>
+                    <span>info@capital-energo.ru</span>
+                  </a>
+                  <a href="#" class="contact-item presentation">
+                    <svg class="icon"><use xlink:href="#icon-pdf"></use></svg>
+                    <span>запрос презентации компании</span>
+                  </a>
+
+                </div>
+              </div>
+              <div class="page-form">
+                  <h2 class="form-title">Связаться с нами</h2>
+                  <form action="" class="form">
+
+                      <div class="form-line">
+                        @@include('./include/page-blocks/form-line-input.html',{ "type" : "text", "name" : "client_name", "placeholder" : "Ваше имя","dop_class" : "w50" })
+                        @@include('./include/page-blocks/form-line-input.html',{ "type" : "tel", "name" : "client_phone", "placeholder" : "Номер телефона","dop_class" : "w50" })
+                      </div>
+
+                    <div class="form-line">
+                      <div class="form-item">
+                        <a href="#" class="btn">
+                          <svg class="icon icon-corner-left"><use xlink:href="#icon-corner-left"></use></svg>
+                          <span>Отправить заявку</span>
+                          <svg class="icon icon-corner-right"><use xlink:href="#icon-corner-right"></use></svg>
+                        </a>
+                      </div>
+                    </div>
+
+                  </form>
+
+                </div>
+            </div>
+            <div id="map" class="map"></div>
+
+
+          </div>
+          </div>
+
+
+
+        @@ include('./include/footer.html')
+      </div>
+    </div>
+
+  </div>
+  @@include('./include/modal.html')
+  @@include('./include/scripts.html')
+</body>
+</html>

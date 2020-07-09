@@ -5,8 +5,8 @@
 // import Inputmask from "inputmask";
 
 
-import '../js/svg.js';
-import '../js/yamap.js';
+import './include/svg.js';
+// import '../js/yamap.js';
 
 let setLocalization = function(e){
     e.preventDefault();

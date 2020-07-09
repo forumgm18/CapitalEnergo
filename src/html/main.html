@@ -1,44 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('./include/head.html',{"title":"КЭПИТАЛ-ЭНЕРГО - Главная"})
+@@include('./include/head.html',{"title":"КЭПИТАЛ-ЭНЕРГО - Главная", "map" : false})
 
 <body >
 <div class="blur">
-  <div style="display: none;">
-    <!--    <svg class="icon"><use xlink:href="#icon-arrow-bold-left"></use></svg>-->
-    <!--    <svg class="icon"><use xlink:href="#icon-arrow-right"></use></svg>-->
-    <!--    <svg class="icon"><use xlink:href="#icon-arrow-right-2"></use></svg>-->
-    <!--    <svg class="icon"><use xlink:href="#icon-arrow-thin-left"></use></svg>-->
-    <!--    <svg class="icon"><use xlink:href="#icon-arrow-thin-right"></use></svg>-->
-    <!--    <svg class="icon"><use xlink:href="#icon-clip"></use></svg>-->
-    <!--    <svg class="icon"><use xlink:href="#icon-consult"></use></svg>-->
-    <!--    <svg class="icon"><use xlink:href="#icon-corner-left"></use></svg>-->
-    <!--    <svg class="icon"><use xlink:href="#icon-corner-right"></use></svg>-->
-    <!--    <svg class="icon"><use xlink:href="#icon-dropdown"></use></svg>-->
-    <!--    <svg class="icon"><use xlink:href="#icon-education"></use></svg>-->
-    <!--    <svg class="icon"><use xlink:href="#icon-electronic"></use></svg>-->
-    <!--    <svg class="icon"><use xlink:href="#icon-labor"></use></svg>-->
-    <!--    <svg class="icon"><use xlink:href="#icon-lightning"></use></svg>-->
-    <!--    <svg class="icon"><use xlink:href="#icon-lightning-round"></use></svg>-->
-    <!--    <svg class="icon"><use xlink:href="#icon-location"></use></svg>-->
-    <!--    <svg class="icon"><use xlink:href="#icon-mail"></use></svg>-->
-    <!--    <svg class="icon"><use xlink:href="#icon-nav"></use></svg>-->
-    <!--    <svg class="icon"><use xlink:href="#icon-pdf"></use></svg>-->
-    <!--    <svg class="icon"><use xlink:href="#icon-phone"></use></svg>-->
-    <!--    <svg class="icon"><use xlink:href="#icon-plus"></use></svg>-->
-    <!--    <svg class="icon"><use xlink:href="#icon-ups"></use></svg>    -->
-    <!--    <svg class="icon"><use xlink:href="#icon-logo-only"></use></svg>-->
-    <!--    <svg class="icon"><use xlink:href="#icon-r"></use></svg>-->
-
-    <!--    <svg class="icon"><use xlink:href="#icon-milling-machine"></use></svg>-->
-    <!--    <svg class="icon"><use xlink:href="#icon-repairing-service"></use></svg>-->
-  </div>
   <div class="container">
     <div class="content relative top-bgr1">
-      @@include('./include/page-blocks/bg-multi-layer.html', {
+<!--      @ @include('./include/page-blocks/bg-multi-layer.html', {-->
+<!--        "fit" : true,-->
+<!--        "paddingBottomClass" : "",-->
+<!--        "img" : "/img/background/main/bg-main.jpg"-->
+<!--      })-->
+
+      @@include('./include/page-blocks/bg-multi-layer-bp.html', {
         "fit" : true,
         "paddingBottomClass" : "",
-        "img" : "/img/bg.jpg"
+        "img_xl" : "/img/background/main/bg-main-xl.jpg",
+        "img_lg" : "/img/background/main/bg-main-lg.jpg",
+        "img_md" : "/img/background/main/bg-main-md.jpg",
+        "img_sm" : "/img/background/main/bg-main-sm.jpg",
+        "img" : "/img/background/main/bg-main.jpg"
       })
 
       @@include('./include/header.html')

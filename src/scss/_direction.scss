@@ -2,7 +2,7 @@
   position: relative;
 
   //background: linear-gradient(180deg, rgba(31,48,106,.9) 0%, rgba(31,48,106,.9) 100%), url(/img/bg-direction.png);
-  background: url(/img/bg-direction.png);
+  background-image: url(../img/background/direction/bg-direction.png);
 
 
   background-repeat: no-repeat;
@@ -10,10 +10,17 @@
   background-size: contain;
   //mix-blend-mode: multiply;
   //background-blend-mode: multiply;
+  @include media-max-width('xl') {  background-image: url(../img/background/direction/bg-direction-xl.png);    }
+  @include media-max-width('lg') {  background-image: url(../img/background/direction/bg-direction-lg.png);    }
 
   @include media-max-width('md') {
+    background-image: url(../img/background/direction/bg-direction-md.png);
     background-position: top 60px center;
+  }
+  @include media-max-width('sm') {
+    background-image: url(../img/background/direction/bg-direction-sm.png);
     background-size: auto 590px;
+
   }
 
 }

@@ -1,19 +1,18 @@
 .top-about-bgr {
   position: relative;
-  background: url(/img/bg-about.png);
+  background-image: url(../img/background/about/bg-about.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
+    @include media-max-width('xl') {  background-image: url(../img/background/about/bg-about-xl.png);    }
+    @include media-max-width('lg') {  background-image: url(../img/background/about/bg-about-lg.png);    }
     @include media-max-width('md') {
-      //background-image: url(/img/bg-about-mobile.png);
+      background-image: url(../img/background/about/bg-about-md.png);
       background-position: center 60px;
-      //background-size: 100% 700px;
-
-      //background-position: top 60px center;
       background-size: auto 700px;
-
-
     }
+    @include media-max-width('sm') {  background-image: url(../img/background/about/bg-about-sm.png);    }
+
 
 }
 .pb0 { padding-bottom: 0!important;}

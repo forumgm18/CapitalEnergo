@@ -1,14 +1,19 @@
 .top-products-bgr {
   position: relative;
-  background: url(/img/bg-products.png);
+  background-image: url(../img/background/products/bg-products.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
-  @include media-max-width('md') {
-    //background-image: url(/img/bg-products-mobile.png);
-    background-position: center 60px;
-    background-size: auto 590px;
+  @include media-max-width('xl') {  background-image: url(../img/background/products/bg-products-xl.png);    }
+  @include media-max-width('lg') {  background-image: url(../img/background/products/bg-products-lg.png);    }
 
+  @include media-max-width('md') {
+    background-image: url(../img/background/products/bg-products-md.png);
+    background-position: center 60px;
+  }
+  @include media-max-width('sm') {
+    background-image: url(../img/background/products/bg-products-sm.png);
+    background-size: auto 590px;
   }
 
 }

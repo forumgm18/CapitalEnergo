@@ -1,15 +1,18 @@
 .top-contacts-bgr {
   position: relative;
-  background: url(/img/bg-contacts.png);
+  background-image: url(../img/background/contacts/bg-contacts.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
+  @include media-max-width('xl') {  background-image: url(/img/background/contacts/bg-contacts-xl.png);    }
   @include media-max-width('lg') {
-    //background-image: url(/img/bg-contacts-mobile.png);
+    background-image: url(/img/background/contacts/bg-contacts-lg.png);
     background-position: center 60px;
     background-size: auto 753px;
-
   }
+  @include media-max-width('md') {  background-image: url(/img/background/contacts/bg-contacts-md.png);    }
+  @include media-max-width('sm') {  background-image: url(/img/background/contacts/bg-contacts-sm.png);    }
+
 
 }
 

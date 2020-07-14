@@ -1,0 +1,104 @@
+.article {
+  position: relative;
+
+
+  &-content{
+    background-color: #fff;
+    //margin-top: 30px;
+    padding: 30px;
+    padding-bottom: 120px;
+        @include media-max-width('md') {
+          padding: 15px;
+          padding-bottom: 60px;
+          margin: 0 -15px ;
+        }
+
+
+
+
+        &:after {
+          content: '';
+          clear: both;
+          display: block;
+
+        }
+  }
+  &-img {
+    display: inline-block;
+    margin-bottom: 10px;
+    min-width: 300px;
+
+    @include media-max-width('md') {  margin-bottom: 20px;  }
+    @include media-max-width('sm') {   width: 100%; }
+
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+      }
+
+
+    &.float-left {
+      margin-right: 30px;
+      @include media-max-width('md') {   float: none;    margin-right: 0;}
+    }
+    &.float-right {
+      margin-left: 30px;
+      @include media-max-width('md') {   float: none;        margin-left: 0;}
+
+
+    }
+
+  }
+
+  .bg-multi-layer-inner {
+      @include media-max-width('md') {
+        padding-bottom: 100%;
+      }
+  }
+
+  .title-top {
+    margin: 30px 0;
+
+    @include media-max-width('md') {   margin: 15px 0;    }
+
+  }
+
+  .bold-left-line {
+    display: flex;
+
+    &:before {
+      //position: static;
+      height: 100%;
+      min-width: 5px;
+      margin-right: 20px;
+    }
+  }
+
+  .title-line {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 30px;
+
+      @include media-max-width('lg') {  font-size: 22px;}
+      @include media-max-width('md') {  font-size: 20px;}
+      @include media-max-width('sm') {  font-size: 16px; line-height: 20px;}
+  }
+
+}
+
+.float-right { float: right;}
+.float-left {
+    float: left;
+     + .bold-left-line {
+          padding-left: 0;
+            &:before {
+              position: static;
+              height: auto;
+            }
+      }
+}
+.clear {clear: both}

@@ -57,12 +57,14 @@
           .lb{
             padding-top: 70px;
             width: 334px;
+            z-index: 2;
             @include media-max-width('xl') { width: 48%; }
             @include media-max-width('md') { width: 100%;              padding: 0;}
 
           }
           .rb{
             width: 334px;
+            z-index: 2;
             @include media-max-width('xl') { width: 48%; }
             @include media-max-width('md') { width: 100%;}
 
@@ -86,6 +88,7 @@
         left: 50%;
         transform: translateX(-50%);
         position: absolute;
+        z-index: 0;
 
           @include media-max-width('xxl') {
             height: 350px;

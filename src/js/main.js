@@ -241,7 +241,18 @@ $(document).ready(function () {
 
 
 
+    $(document).on('click','*:not(.select-value)',function (e) {
+        if ($(this).closest('.select').length ) {
+            e.stopPropagation();
+            return
+        }
+        $('.select-value.open').removeClass('open');
+    });
+
     $('.select-value').on('click',function () {
+        $('.select-value').not(this).removeClass('open');
+
+
         if($(this).hasClass('open')){
             $(this).siblings('input').val('');
             $(this).find('span').text($(this).attr('data-placeholder'));

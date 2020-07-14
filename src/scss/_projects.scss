@@ -13,6 +13,12 @@
   }
 
 }
+
+.light-bgr {
+  .title-vertical {color:var(--title-base-color)}
+  .localization-link { color: var(--menu-contacts);  }
+
+}
 .scroll-bar {
   background-color: var(--base-color1)!important;
   opacity: .9!important;
@@ -40,10 +46,8 @@
     margin-right: 30px;
     @include media-max-width('lg') {      margin-right: 0;}
   }
-  .title-vertical {color:var(--title-base-color)}
-  .localization-link {
-    color: var(--menu-contacts);
-  }
+  //.title-vertical {color:var(--title-base-color)}
+  //.localization-link { color: var(--menu-contacts);  }
 }
 
 .project {

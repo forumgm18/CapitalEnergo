@@ -90,7 +90,8 @@
                   <span>info@capital-energo.ru</span>
                 </a>
 
-                <a class="btn" data-fancybox="" data-src="#urgentFeedbackModal" data-modal="true" href="javascript:;">
+<!--                <a class="btn" data-fancybox="" data-src="#urgentFeedbackModal" data-modal="true" href="javascript:;">-->
+                <a class="btn" data-fancybox="" data-src="#successModal" data-modal="true" href="javascript:;">
                  <svg class="icon icon-corner-left"><use xlink:href="#icon-corner-left"></use></svg>
                  <span>Срочная обратная связь</span>
                  <svg class="icon icon-corner-right"><use xlink:href="#icon-corner-right"></use></svg>
@@ -405,13 +406,31 @@
   </div>
 </div>
 
+<div class="modal" id="successModal">
+  <a href="javascript:;" class="close-arrow" data-fancybox-close>
+    <svg class="icon"><use xlink:href="#icon-arrow-thin-left"></use></svg>
+  </a>
+
+  <h2 class="title-line">Форма успешно отправлена</h2>
+
+
+  <div class="modal-content">
+    <p>Форма успешно отправлена. Скоро мы свяжемся с вами.</p>
+          <a href="#" class="btn mt40" data-fancybox-close>
+            <svg class="icon icon-corner-left"><use xlink:href="#icon-corner-left"></use></svg>
+            <span>Закрыть</span>
+            <svg class="icon icon-corner-right"><use xlink:href="#icon-corner-right"></use></svg>
+          </a>
+  </div>
+</div>
+
 
 
   <script defer src="plugins/jquery-3.5.1.min.js"></script>
 <script defer src="plugins/slick/slick-1.8.1.js"></script>
 <script defer src="plugins/fancybox3/jquery.fancybox.min.js"></script>
 <script defer src="plugins/jq.scrollbar/jquery.scrollbar.min.js"></script>
-<script src="js/main.js"></script>
+<script defer src="js/main.js"></script>
 
 </body>
 </html>

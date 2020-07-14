@@ -1,0 +1,60 @@
+.all-articles {
+
+
+  &-content {
+    @include dFlex($fw:wrap);
+
+    .know-title:nth-child(1):after, .know-title:nth-child(2):after {
+      background: linear-gradient(90deg, transparent 0%, var(--menu-bgr) 100%);
+
+      @include media-max-width('lg') {
+        background: linear-gradient(90deg, transparent 0%, #fff 100%);
+      }
+    }
+
+  }
+
+  .title-top {  margin-right: 30px;  }
+
+  .know-item {
+    width: 50%;
+    max-width: unset;
+
+    @include media-max-width('lg') {
+      width: 100%;
+      padding-right: 0;
+    }
+
+  }
+
+  .direction-block {
+
+    .know-title:after, .know-text:after {
+        background: linear-gradient(90deg, transparent 0%, var(--menu-bgr) 100%);
+    }
+    .know-item:nth-child(2) .know-text:after {
+        @include media-max-width('sm') {        display: none;      }
+    }
+    .know-item:nth-child(3) {
+
+      .know-title:after {
+        @include media-max-width('sm') {
+          background: linear-gradient(90deg, transparent 0%, #fff 100%);
+        }
+      }
+
+      .know-text:after {
+        @include media-max-width('lg') {
+          background: linear-gradient(90deg, transparent 0%, #fff 100%);
+        }
+      }
+
+    }
+
+
+  }
+
+
+
+
+  }
